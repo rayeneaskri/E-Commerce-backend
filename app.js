@@ -1,8 +1,9 @@
 const express =require('express');
 const mongoose =require("mongoose");
 const dotenv =require('dotenv');
-
+const cors=require('cors')
 const app = express();
+app.use(cors())
 const categorieRouter=require("./route/categorie.route")
 const scategorieRouter =require("./route/scategorie.route")
 const articleRouter =require("./route/article.route")
